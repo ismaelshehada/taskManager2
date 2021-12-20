@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:id="@+id/recycle_item"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/taskNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TaskNumber"
+                app:layout_constraintStart_toStartOf="@id/constrant"
+                app:layout_constraintTop_toTopOf="@id/constrant"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/taskNmV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="#7"
+                app:layout_constraintStart_toStartOf="@id/taskNm"
+                app:layout_constraintTop_toBottomOf="@+id/taskNm" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constrant" />
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#F7F7F7"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@id/constrant"
+                app:layout_constraintStart_toStartOf="@id/constrant"
+                app:layout_constraintTop_toBottomOf="@+id/taskNmV">
+
+                <TextView
+                    android:id="@+id/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="Title"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/summaryTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:hint="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/constrant"
+                app:layout_constraintStart_toStartOf="@id/constrant"
+                app:layout_constraintTop_toBottomOf="@+id/lin1">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_event_available_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="17-16-2007"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp"
+                    android:gravity="center_vertical"
+                    android:hint="12:00"
+                    tools:ignore="RtlCompat"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

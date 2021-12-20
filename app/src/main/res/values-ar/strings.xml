@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مدير المهام</string>
+    <string name="tab_text_1">الرئيسية</string>
+    <string name="tab_text_2">المهام</string>
+    <string name="action_settings">الاعدادت</string>
+    <string name="title">العنوان</string>
+    <string name="summary">الملخص</string>
+    <string name="description">التفاصيل</string>
+    <string name="image">الصورة</string>
+    <string name="addTask">اضافة مهمة</string>
+    <string name="title_activity_main2">مدير المهام</string>
+    <string name="hello_blank_fragment">ششش</string>
+    <string name="section_format">ششش</string>
+    <string name="addnewtask">أضف مهمة جديدة</string>
+    <string name="add">أضف مهمة جديدة</string>
+    <string name="TaskNumber">رقم المهمة</string>
+    <string name="delete">جاري حذف المهة… </string>
+    <string name="deleted">هل تود حذف المهمة !!</string>
+    <string name="Loading">جاري التحميل …</string>
+</resources>
